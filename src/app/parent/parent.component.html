@@ -1,0 +1,26 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Sr No. </th>
+      <th *ngFor="let colname of colobject">{{colname}}</th>
+      <th>Delete</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let rowObjects of viewData; let i=index">
+      <td>{{i+1}}</td>
+      <td *ngFor="let colname of colobject">
+
+        <div *ngIf="rowObjects.inputDisabled == true">
+          {{rowObjects[colname]}}
+        </div>
+
+        <input *ngIf="rowObjects.inputDisabled == false" type="text" [(ngModel)]="rowObjects[colname]" />
+      </td> 
+      <td style="cursor: pointer;" (click)="deleteRow(i)">Delete</td>
+      <td style="cursor: pointer;" *ngIf="rowObjects.editshow == true" (click)="editItem()">Edit</td>
+      <td style="cursor: pointer;" *ngIf="rowObjects.editshow == false" (click)="updateItem()">Update</td> 
+    </tr>
+  </tbody>
+</table>
