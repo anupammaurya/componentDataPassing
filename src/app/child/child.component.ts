@@ -16,7 +16,7 @@ export class ChildComponent implements OnInit {
   rowObject = [
     { 
       id: 1,
-      firstname: "Swarup",
+      firstname: "Swarup1",
       lastname: "Sharma",
       address: "Delhi",
       contact: "258012",
@@ -24,7 +24,7 @@ export class ChildComponent implements OnInit {
     },
     {
       id: 2,
-      firstname: "Swarm",
+      firstname: "Swarm1",
       lastname: "Pujari",
       address: "Mumbai",
       contact: "258012",
@@ -32,7 +32,7 @@ export class ChildComponent implements OnInit {
     },
     {
       id: 3,
-      firstname: "Kubernates",
+      firstname: "Kubernates1",
       lastname: "Linux",
       address: "Delhi",
       contact: "258012",
@@ -40,7 +40,7 @@ export class ChildComponent implements OnInit {
     },
     {
       id: 4,
-      firstname: "Docker",
+      firstname: "Docker1",
       lastname: "Lome",
       address: "Delhi",
       contact: "258012",
